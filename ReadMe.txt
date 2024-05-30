@@ -1,32 +1,30 @@
 #Pipeline Action Task - Projeto
 
-## Como executar a aplicação
+Exercício 1: Criando uma Pipeline de CI/CD com GitHub Actions e Testes Automatizados
 
 ### Pré-requisitos
 
 - Python 3.x
 - pip
 
-### Passos para executar
+##Instalação e execução
 
-1. Crie um ambiente virtual:
-   ```bash
-   python -m venv venv
-   ```
+1. Clone o repositório:
+	git clone https://github.com/clr-c/pipeline-action-task.git
+   
+2. Abra o diretório do projeto
+	cd pipeline-action-task
 
-2. Ative o ambiente virtual:
-   ```bash
-   venv/bin/activate  #Quando rodado no Windows
-   ```
+3. Crie e ative o ambiente virtual:
+	python -m venv venv
+	source venv/bin/activate	#Linux/Mac
+	.\venv\Scripts\activate		#Windows
 
-3. Instale as dependências:
-   ```bash
-   pip install -r requirements.txt
-   ```
+4. Instale as dependências do projeto
+	pip install -r requirements.txt
 
-4. Execute a aplicação:
-   ```bash
-   python app.py
-   ```
+5. Inicie o servidor Flask e execute o teste:
+	python app.py
+	pytest
 
-A aplicação estará rodando em `http://127.0.0.1:5000/`.
+6. Crie um arquivo '.gitignore' para python cache

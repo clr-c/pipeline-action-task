@@ -8,3 +8,5 @@ echo     return 'Hello, World!' >> app.py
 echo. >> app.py
 echo if __name__ == '__main__': >> app.py
 echo     app.run(debug=True) >> app.py
+def inverter_string(s):
+    return s[::-1]
